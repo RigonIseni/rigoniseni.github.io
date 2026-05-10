@@ -1,42 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Files by Rigon</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'poppins', sans-serif;
-        }
-        body {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #009FB7;
-            flex-direction: column;
-            gap: 50px;
-        }
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 700;
-            padding: 15px 15px;
-            border-radius: 10px;
-            background-color: #1B4079;
-        }
-        img {
-            width: 170px;
-            border-radius: 10px;
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AURORA</title>
+<meta name="description" content="AURORA crafts timeless furniture in solid wood and natural fibres. Pieces designed for a lifetime of living." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <img src="./" alt="">
-    <a href="./" download>DOWNLOAD HERE</a>
+
+<div class="lang-popup" id="langPopup">
+  <div class="lang-card">
+    <div class="lang-glow"></div>
+
+    <p class="lang-mini">Maison AURORA</p>
+    <h2>Select your language</h2>
+    <p class="lang-sub">
+      Curated experiences, tailored to your language.
+    </p>
+
+    <div class="lang-options">
+        <a class="lang-btn" href="#" onclick="setLanguage('en'); return false;">
+          <span>English</span>
+          <small>International</small>
+        </a>
+
+        <a class="lang-btn" href="./index-al.html">
+          <span>Shqip</span>
+          <small>Albanian</small>
+        </a>
+
+        <a class="lang-btn" href="./index-mk.html">
+          <span>Македонски</span>
+          <small>Macedonian</small>
+        </a>
+    </div>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo"><img src="./assets/white-logo-noback.png" height="150px" alt=""></a>
+    <nav class="nav-links">
+      <a href="#collection">Collection</a>
+      <a href="#craft">Craft</a>
+      <a href="#journal">Journal</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a href="#collection" class="nav-cta">Showroom →</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="assets/aurora-hero.jpg" alt="Curved bouclé sofa in a sunlit minimalist interior" class="hero-img" />
+  <div class="hero-overlay"></div>
+  <div class="hero-tint"></div>
+  <div class="hero-content">
+    <p class="eyebrow eyebrow-light">Spring Collection · MMXXVI</p>
+    <h1>Quiet objects,<br/>built for a lifetime.</h1>
+    <p class="hero-lead">AURORA designs and makes heirloom furniture from solid wood, natural stone and woven fibre — shaped slowly, by hand, in our atelier.</p>
+    <div class="hero-actions">
+      <a href="#collection" class="btn btn-primary">Discover Collection <span>→</span></a>
+      <a href="#craft" class="link-light">Our craft</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container narrow center">
+    <p class="eyebrow">Maison AURORA</p>
+    <p class="intro-text">A return to weight, warmth, and the quiet dignity of pieces made to be kept — not replaced.</p>
+  </div>
+</section>
+
+<section id="collection" class="collection">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">The Collection</p>
+        <h2>Selected works</h2>
+      </div>
+      <a href="#" class="link-dark">View all pieces →</a>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="card-img"><img src="assets/aurora-chair.jpg" alt="Lumen Lounge Chair" loading="lazy" /></div>
+        <div class="card-meta">
+          <div>
+            <p class="cat">Seating</p>
+            <h3>Lumen Lounge Chair</h3>
+          </div>
+          <p class="price">€2,450</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="assets/aurora-table.jpg" alt="Solis Dining Table" loading="lazy" /></div>
+        <div class="card-meta">
+          <div>
+            <p class="cat">Tables</p>
+            <h3>Solis Dining Table</h3>
+          </div>
+          <p class="price">€4,890</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="assets/aurora-sofa.jpg" alt="Vela Modular Sofa" loading="lazy" /></div>
+        <div class="card-meta">
+          <div>
+            <p class="cat">Seating</p>
+            <h3>Vela Modular Sofa</h3>
+          </div>
+          <p class="price">€6,200</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="craft" class="craft">
+  <div class="container craft-grid">
+    <div class="craft-img"><img src="assets/aurora-craft.jpg" alt="Craftsman shaping wood in the AURORA atelier" loading="lazy" /></div>
+    <div class="craft-text">
+      <p class="eyebrow">The Atelier</p>
+      <h2>Twelve hands.<br/>One piece.</h2>
+      <p class="body">Each AURORA piece passes through twelve pairs of hands across our atelier in the foothills of the Jura — from the joiner who selects the timber to the finisher who oils the final grain. Nothing is rushed. Nothing leaves until it is right.</p>
+      <dl class="stats">
+        <div><dt>38</dt><dd>Years of craft</dd></div>
+        <div><dt>100%</dt><dd>FSC timber</dd></div>
+        <div><dt>25y</dt><dd>Guarantee</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="journal" class="quote">
+  <div class="container narrow center">
+    <p class="eyebrow">In the Press</p>
+    <blockquote>“AURORA is making the kind of furniture you inherit — pieces with the patience of stone and the warmth of an old book.”</blockquote>
+    <p class="cite">Architectural Review · 2026</p>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="container visit-grid">
+    <div>
+      <p class="eyebrow eyebrow-light">Visit</p>
+      <h2 class="light">The showroom is<br/>open by appointment.</h2>
+      <p class="body light">Come sit, touch the grain, hear the story behind each piece. Our team will guide you through the collection and the made-to-order process.</p>
+      <a href="#" class="btn btn-outline">Book a viewing →</a>
+    </div>
+    <div class="addresses">
+      <div>
+        <p class="eyebrow eyebrow-light">Paris</p>
+        <p class="addr">12 Rue de Sèvres<br/>75006</p>
+        <p class="muted-light">Tue–Sat · 11–19h</p>
+      </div>
+      <div>
+        <p class="eyebrow eyebrow-light">Milan</p>
+        <p class="addr">Via Brera 28<br/>20121</p>
+        <p class="muted-light">Wed–Sat · 10–18h</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="logo dark">AURORA</p>
+      <p class="muted small">© MMXXVI · Maison AURORA. All works reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">Trade</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+document.querySelectorAll(`
+  h1, h2, h3,
+  p,
+  .card,
+  .craft-img,
+  .btn,
+  .addresses > div,
+  blockquote,
+  .section-head,
+  .hero-actions
+`).forEach((el) => {
+  el.classList.add("hidden");
+  observer.observe(el);
+});
+
+function setLanguage(lang) {
+  const popup = document.getElementById("langPopup");
+
+  popup.style.transform = "scale(0.98)";
+  popup.style.opacity = "0";
+
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 500);
+}
+</script>
 </body>
 </html>
